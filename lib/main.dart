@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_demo/startup_name.dart';
+import 'package:flutter_demo/layout_demo.dart';
 
 //入口
 void main() => runApp(new MyApp());
@@ -9,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
         title: 'Flutter Demo',
-        theme: new ThemeData(primaryColor: Colors.white),
+        theme: new ThemeData(primaryColor: Colors.blue),
         home: new Scaffold(
           appBar: new AppBar(title: new Text('Flutter Demo')),
           body: new ListView(
@@ -18,6 +19,10 @@ class MyApp extends StatelessWidget {
               ListItem(
                 title: 'startup_name',
                 screenPage: new RandomWords(),
+              ),
+              ListItem(
+                title: 'layout_demo',
+                screenPage: new LayoutDemo(),
               ),
             ],
           ),
